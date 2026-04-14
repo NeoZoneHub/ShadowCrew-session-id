@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Arslan-MD Sessions | Ultra Pro Max</title>
+  <title>Digital Crew 243 | Ultra Pro Max Sessions</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -15,33 +15,36 @@
     }
 
     :root {
-      --neon-cyan: #00ffcc;
-      --neon-pink: #ff2e63;
-      --neon-purple: #7209b7;
-      --neon-blue: #4361ee;
-      --dark-bg: #0a0a0a;
-      --card-bg: rgba(15, 15, 25, 0.8);
+      --accent-teal: #14B8A6;
+      --accent-blue: #3B82F6;
+      --accent-gradient: linear-gradient(135deg, #14B8A6 0%, #3B82F6 100%);
+      --bg-primary: #090B10;
+      --bg-secondary: #0F1117;
+      --bg-card: #151820;
+      --bg-elevated: #1A1E28;
+      --border-subtle: #252A35;
+      --text-primary: #F1F5F9;
+      --text-secondary: #94A3B8;
+      --text-muted: #5B6B8C;
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--dark-bg);
-      color: var(--neon-cyan);
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
       min-height: 100vh;
       position: relative;
       overflow-x: hidden;
     }
 
-    /* Advanced Particle Background */
     #particles-js {
       position: fixed;
       width: 100%;
       height: 100%;
       z-index: -2;
-      background: radial-gradient(ellipse at center, #0a0a1a 0%, #000000 100%);
+      background: radial-gradient(ellipse at center, #0B0E15 0%, #05070A 100%);
     }
 
-    /* Animated Grid Overlay */
     .cyber-grid {
       position: fixed;
       top: 0;
@@ -50,11 +53,11 @@
       height: 100%;
       z-index: -1;
       background: 
-        linear-gradient(rgba(0, 255, 204, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 255, 204, 0.03) 1px, transparent 1px);
+        linear-gradient(rgba(20, 184, 166, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.02) 1px, transparent 1px);
       background-size: 50px 50px;
       animation: gridMove 40s linear infinite;
-      opacity: 0.5;
+      opacity: 0.4;
     }
 
     @keyframes gridMove {
@@ -62,7 +65,6 @@
       100% { transform: translate(-50px, -50px); }
     }
 
-    /* 3D Profile Section */
     .profile-section {
       display: flex;
       justify-content: center;
@@ -73,8 +75,8 @@
     }
 
     .profile-container {
-      width: 200px;
-      height: 200px;
+      width: 180px;
+      height: 180px;
       position: relative;
       transform-style: preserve-3d;
       animation: float3d 6s ease-in-out infinite;
@@ -86,10 +88,8 @@
       border-radius: 50%;
       object-fit: cover;
       position: absolute;
-      box-shadow: 
-        0 0 30px var(--neon-cyan),
-        inset 0 0 30px rgba(0, 255, 204, 0.3);
-      border: 3px solid var(--neon-cyan);
+      box-shadow: 0 0 30px rgba(20, 184, 166, 0.3), inset 0 0 20px rgba(20, 184, 166, 0.2);
+      border: 2px solid var(--accent-teal);
       transform: translateZ(20px);
       animation: rotate3d 20s linear infinite;
     }
@@ -101,16 +101,9 @@
       top: -5%;
       left: -5%;
       border-radius: 50%;
-      background: conic-gradient(
-        from 0deg,
-        var(--neon-pink),
-        var(--neon-purple),
-        var(--neon-blue),
-        var(--neon-cyan),
-        var(--neon-pink)
-      );
+      background: var(--accent-gradient);
       animation: rotate 4s linear infinite;
-      box-shadow: 0 0 40px rgba(255, 46, 99, 0.5);
+      box-shadow: 0 0 25px rgba(20, 184, 166, 0.3);
     }
 
     .profile-border::before {
@@ -120,14 +113,14 @@
       height: 94%;
       top: 3%;
       left: 3%;
-      background: var(--dark-bg);
+      background: var(--bg-primary);
       border-radius: 50%;
       z-index: -1;
     }
 
     @keyframes float3d {
       0%, 100% { transform: translateY(0) rotateX(5deg) rotateY(5deg); }
-      50% { transform: translateY(-20px) rotateX(-5deg) rotateY(-5deg); }
+      50% { transform: translateY(-15px) rotateX(-5deg) rotateY(-5deg); }
     }
 
     @keyframes rotate3d {
@@ -135,55 +128,58 @@
       100% { transform: translateZ(20px) rotateY(360deg); }
     }
 
-    /* Container */
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
     .container {
-      max-width: 1300px;
+      max-width: 1280px;
       margin: 0 auto;
       padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 50px;
+      gap: 48px;
       position: relative;
       z-index: 1;
       margin-top: 80px;
     }
 
-    /* Enhanced News Ticker */
     .news-container {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 1000;
-      font-family: 'Orbitron', sans-serif;
-      background: rgba(10, 10, 20, 0.9);
-      backdrop-filter: blur(10px);
-      border-bottom: 2px solid var(--neon-cyan);
-      box-shadow: 0 5px 30px rgba(0, 255, 204, 0.3);
+      font-family: 'Inter', sans-serif;
+      background: rgba(9, 11, 16, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
 
     .news-container .title {
       position: fixed;
       top: 0;
       left: 0;
-      width: 40%;
-      background: linear-gradient(90deg, var(--neon-pink), var(--neon-purple));
-      padding: 12px 24px;
+      width: auto;
+      background: var(--accent-gradient);
+      padding: 10px 24px;
       color: #fff;
-      font-weight: 800;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 3px;
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+      letter-spacing: 2px;
       z-index: 1001;
-      font-size: 1.1rem;
-      box-shadow: 0 0 20px rgba(255, 46, 99, 0.5);
+      font-size: 0.9rem;
+      box-shadow: 0 2px 15px rgba(20, 184, 166, 0.3);
     }
 
     .news-container .ticker {
       width: 100%;
       overflow: hidden;
-      margin-left: 40%;
+      margin-left: auto;
+      padding-left: 180px;
     }
 
     .news-container ul {
@@ -197,21 +193,19 @@
     .news-container ul li {
       white-space: nowrap;
       padding: 0 30px;
-      color: var(--neon-cyan);
-      font-size: 1.1rem;
-      font-weight: 600;
-      text-shadow: 0 0 10px var(--neon-cyan);
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      font-weight: 500;
       position: relative;
     }
 
     .news-container ul li::after {
-      content: "✦";
+      content: "•";
       position: absolute;
       top: 50%;
       right: -5px;
       transform: translateY(-50%);
-      color: var(--neon-pink);
-      text-shadow: 0 0 10px var(--neon-pink);
+      color: var(--accent-teal);
     }
 
     @keyframes scroll {
@@ -219,311 +213,210 @@
       to { transform: translateX(-100%); }
     }
 
-    /* Hero Section */
     .hero {
       text-align: center;
-      padding: 60px 40px;
-      background: var(--card-bg);
-      border: 2px solid var(--neon-cyan);
-      border-radius: 20px;
-      box-shadow: 
-        0 0 40px rgba(0, 255, 204, 0.4),
-        inset 0 0 40px rgba(0, 255, 204, 0.1);
+      padding: 48px 40px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
       position: relative;
       overflow: hidden;
-      backdrop-filter: blur(10px);
-      transform-style: preserve-3d;
-      transform: translateZ(0);
-      transition: all 0.5s ease;
-    }
-
-    .hero::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        45deg,
-        transparent,
-        rgba(0, 255, 204, 0.1),
-        transparent
-      );
-      transform: rotate(45deg);
-      animation: shine 6s infinite;
+      backdrop-filter: blur(8px);
+      transition: all 0.4s ease;
     }
 
     .hero:hover {
-      transform: translateY(-10px) translateZ(10px);
-      box-shadow: 
-        0 15px 50px rgba(0, 255, 204, 0.6),
-        inset 0 0 50px rgba(0, 255, 204, 0.2);
+      transform: translateY(-6px);
+      border-color: rgba(20, 184, 166, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
 
     .hero h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3.5rem;
-      background: linear-gradient(45deg, var(--neon-pink), var(--neon-cyan));
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 3rem;
+      background: var(--accent-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      text-shadow: 0 0 30px rgba(255, 46, 99, 0.5);
       margin-bottom: 20px;
-      letter-spacing: 2px;
-      font-weight: 900;
+      letter-spacing: -0.02em;
+      font-weight: 800;
     }
 
     .hero p {
-      font-size: 1.3rem;
-      color: var(--neon-cyan);
+      font-size: 1.2rem;
+      color: var(--text-secondary);
       max-width: 700px;
       margin: 0 auto;
       line-height: 1.6;
-      text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
     }
 
-    /* Features Section */
     .features {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+      gap: 28px;
       width: 100%;
     }
 
     .feature-card {
-      background: var(--card-bg);
-      border: 2px solid var(--neon-cyan);
-      border-radius: 15px;
-      padding: 30px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
+      padding: 28px;
       text-align: center;
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 16px;
       position: relative;
       overflow: hidden;
-      backdrop-filter: blur(10px);
-      transform-style: preserve-3d;
-      transform: translateZ(0);
-    }
-
-    .feature-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(0, 255, 204, 0.1),
-        transparent
-      );
-      transition: left 0.7s ease;
-    }
-
-    .feature-card:hover::before {
-      left: 100%;
     }
 
     .feature-card:hover {
-      transform: translateY(-15px) translateZ(20px) rotateX(5deg);
-      box-shadow: 
-        0 20px 40px rgba(0, 255, 204, 0.4),
-        inset 0 0 30px rgba(0, 255, 204, 0.1);
-      border-color: var(--neon-pink);
+      transform: translateY(-8px);
+      border-color: rgba(20, 184, 166, 0.4);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.5);
     }
 
     .feature-card h3 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.8rem;
-      color: var(--neon-pink);
-      margin-bottom: 15px;
-      text-shadow: 0 0 15px rgba(255, 46, 99, 0.5);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
       font-weight: 700;
     }
 
     .feature-card p {
-      font-size: 1.1rem;
-      color: var(--neon-cyan);
+      font-size: 0.95rem;
+      color: var(--text-secondary);
       flex-grow: 1;
       line-height: 1.6;
     }
 
     .feature-card .btn {
       width: 100%;
-      padding: 1.2em;
-      font-size: 1.1rem;
+      padding: 1em;
+      font-size: 0.95rem;
       margin-top: auto;
     }
 
-    /* About & Contact Sections */
     .about, .contact {
-      background: var(--card-bg);
-      border: 2px solid var(--neon-cyan);
-      border-radius: 15px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
       padding: 40px;
       text-align: center;
       width: 100%;
-      position: relative;
-      overflow: hidden;
-      backdrop-filter: blur(10px);
-      transition: all 0.5s ease;
+      transition: all 0.3s ease;
     }
 
     .about:hover, .contact:hover {
-      transform: translateY(-10px);
-      box-shadow: 
-        0 15px 40px rgba(0, 255, 204, 0.4),
-        inset 0 0 40px rgba(0, 255, 204, 0.1);
+      transform: translateY(-6px);
+      border-color: rgba(20, 184, 166, 0.3);
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.4);
     }
 
     .about h2, .contact h2 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 2.5rem;
-      background: linear-gradient(45deg, var(--neon-pink), var(--neon-cyan));
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2rem;
+      background: var(--accent-gradient);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      margin-bottom: 20px;
-      font-weight: 800;
+      margin-bottom: 16px;
+      font-weight: 700;
     }
 
     .about p, .contact p {
-      font-size: 1.2rem;
-      color: var(--neon-cyan);
-      max-width: 900px;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      max-width: 800px;
       margin: 0 auto;
       line-height: 1.7;
     }
 
-    /* Buttons */
     .btn {
       background: transparent;
-      border: 2px solid var(--neon-cyan);
-      border-radius: 12px;
+      border: 1px solid var(--border-subtle);
+      border-radius: 40px;
       cursor: pointer;
-      font-family: 'Orbitron', sans-serif;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      color: var(--neon-cyan);
-      text-shadow: 0 0 10px var(--neon-cyan);
-      transition: all 0.4s ease;
-      position: relative;
-      overflow: hidden;
-      font-weight: 700;
-      letter-spacing: 1px;
-      padding: 1em 1.5em;
-    }
-
-    .btn::before, .btn::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(0, 255, 204, 0.4), transparent);
-      transition: all 0.6s ease;
-    }
-
-    .btn::after {
-      left: 100%;
-      transition-delay: 0.2s;
-    }
-
-    .btn:hover::before {
-      left: 100%;
-    }
-
-    .btn:hover::after {
-      left: -100%;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      text-transform: none;
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+      font-weight: 600;
+      padding: 0.8em 1.5em;
     }
 
     .btn:hover {
-      background: rgba(0, 255, 204, 0.15);
-      box-shadow: 
-        0 0 25px rgba(0, 255, 204, 0.7),
-        inset 0 0 15px rgba(0, 255, 204, 0.2);
-      color: #fff;
-      border-color: #fff;
-      transform: translateY(-3px);
+      background: rgba(20, 184, 166, 0.1);
+      border-color: var(--accent-teal);
+      color: var(--accent-teal);
+      transform: translateY(-2px);
     }
 
     .btn:active {
-      transform: scale(0.97);
-      filter: brightness(1.2);
+      transform: scale(0.98);
     }
 
-    /* Footer */
     .footer {
       margin-top: 60px;
-      padding: 30px;
-      background: var(--card-bg);
-      border: 2px solid var(--neon-cyan);
-      border-radius: 15px;
+      padding: 32px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 20px;
       text-align: center;
-      color: var(--neon-cyan);
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1rem;
-      text-shadow: 0 0 10px var(--neon-cyan);
+      color: var(--text-secondary);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
       width: 100%;
-      backdrop-filter: blur(10px);
     }
 
     .footer b {
-      color: var(--neon-pink);
-      text-shadow: 0 0 10px rgba(255, 46, 99, 0.5);
+      color: var(--accent-teal);
+      font-weight: 600;
     }
 
     .footer .social-links {
-      margin-top: 25px;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 25px;
-      max-width: 400px;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
     }
 
     .footer .social-links a {
-      color: var(--neon-cyan);
-      font-size: 2rem;
-      transition: all 0.4s ease;
-      position: relative;
+      color: var(--text-secondary);
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 70px;
-      height: 70px;
+      width: 48px;
+      height: 48px;
       border-radius: 50%;
-      border: 2px solid var(--neon-cyan);
-      box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
-      margin: 0 auto;
+      border: 1px solid var(--border-subtle);
     }
 
     .footer .social-links a:hover {
-      color: var(--neon-pink);
-      text-shadow: 0 0 15px var(--neon-pink);
-      border-color: var(--neon-pink);
-      box-shadow: 0 0 25px rgba(255, 46, 99, 0.7);
-      transform: translateY(-5px) scale(1.1);
+      color: var(--accent-teal);
+      border-color: var(--accent-teal);
+      transform: translateY(-3px);
     }
 
-    /* Animations */
     @keyframes shine {
       0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
       100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
     }
 
-    /* Responsive Design */
     @media (max-width: 1024px) {
       .features {
         grid-template-columns: repeat(2, 1fr);
       }
-      
       .hero h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
     }
 
@@ -531,129 +424,103 @@
       .container {
         padding: 15px;
         margin-top: 100px;
-        gap: 40px;
+        gap: 36px;
       }
-
       .news-container .title {
-        width: 50%;
-        font-size: 0.9rem;
-        padding: 10px 15px;
+        width: auto;
+        font-size: 0.8rem;
+        padding: 8px 16px;
       }
-
       .news-container .ticker {
-        margin-left: 50%;
+        padding-left: 140px;
       }
-
       .news-container ul li {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 0 20px;
       }
-
       .hero {
-        padding: 40px 20px;
+        padding: 32px 20px;
       }
-
       .hero h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
       }
-
       .hero p {
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
-
       .features {
         grid-template-columns: 1fr;
-        gap: 25px;
-      }
-
-      .feature-card {
-        padding: 25px;
-      }
-
-      .feature-card h3 {
-        font-size: 1.5rem;
-      }
-
-      .about, .contact {
-        padding: 30px 20px;
-      }
-
-      .about h2, .contact h2 {
-        font-size: 2rem;
-      }
-
-      .about p, .contact p {
-        font-size: 1.1rem;
-      }
-
-      .profile-container {
-        width: 160px;
-        height: 160px;
-      }
-
-      .footer .social-links {
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
       }
-
+      .feature-card {
+        padding: 24px;
+      }
+      .feature-card h3 {
+        font-size: 1.3rem;
+      }
+      .about, .contact {
+        padding: 28px 20px;
+      }
+      .about h2, .contact h2 {
+        font-size: 1.6rem;
+      }
+      .profile-container {
+        width: 140px;
+        height: 140px;
+      }
+      .footer .social-links {
+        gap: 16px;
+      }
       .footer .social-links a {
-        width: 60px;
-        height: 60px;
-        font-size: 1.7rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
       }
     }
 
     @media (max-width: 480px) {
       .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
       }
-      
       .profile-container {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
       }
-      
       .btn {
-        font-size: 1rem;
-        padding: 0.9em 1.2em;
+        font-size: 0.85rem;
+        padding: 0.7em 1.2em;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Advanced Particle Background -->
   <div id="particles-js"></div>
   <div class="cyber-grid"></div>
 
-  <!-- Enhanced News Ticker -->
   <div class="news-container">
-    <div class="title">🚀 Arslan-MD Ultra Pro Max</div>
+    <div class="title">DIGITAL CREW 243</div>
     <div class="ticker">
       <ul>
-        <li>Welcome to the Ultimate Session Experience!</li>
+        <li>Welcome to the Ultimate Session Experience</li>
         <li>Get your QR Codes & Pairing Codes Instantly</li>
-        <li>DSF CREW DEVS - Premium Quality</li>
+        <li>Premium Quality & Enterprise Security</li>
         <li>Advanced Security & Lightning Fast Performance</li>
       </ul>
     </div>
   </div>
 
   <div class="container">
-    <!-- 3D Profile Section -->
     <div class="profile-section">
       <div class="profile-container">
         <div class="profile-border"></div>
-        <img src="https://files.catbox.moe/16i1l7.jpg" alt="Arslan-MD" class="profile-image">
+        <img src="https://files.catbox.moe/logo.jpg" alt="Digital Crew 243" class="profile-image">
       </div>
     </div>
 
-    <!-- Hero Section -->
     <div class="hero">
       <h1>ULTRA PRO MAX SESSIONS</h1>
-      <p>Experience the next generation of WhatsApp bot sessions. Get your QR or pair code, deploy Arslan-MD with advanced features, and join the elite tech community!</p>
+      <p>Experience the next generation of WhatsApp bot sessions. Get your QR or pair code, deploy with advanced features, and join the elite tech community.</p>
     </div>
 
-    <!-- Features Section -->
     <div class="features">
       <div class="feature-card">
         <h3><i class="fas fa-qrcode"></i> QR Code Pairing</h3>
@@ -666,69 +533,64 @@
         <button onclick="window.location.href='/pair'" class="btn">Generate Code</button>
       </div>
       <div class="feature-card">
-        <h3><i class="fas fa-rocket"></i> Deploy Arslan-MD</h3>
+        <h3><i class="fas fa-rocket"></i> Deploy Now</h3>
         <p>One-click deployment with advanced features. Get your own bot running in minutes with premium functionality and 24/7 support.</p>
-        <button onclick="window.location.href='https://github.com/Arslan-MD/Arslan_MD'" class="btn">Deploy Now</button>
+        <button onclick="window.location.href='https://github.com/NeoZoneHub/ShadowCrew'" class="btn">Deploy Now</button>
       </div>
     </div>
 
-    <!-- About Section -->
     <div class="about">
-      <h2>About Ultra Pro Max</h2>
-      <p>We're revolutionizing the WhatsApp bot experience with cutting-edge technology. Our Ultra Pro Max version delivers unprecedented performance, security, and features. Join thousands of satisfied users who have upgraded to the premium Arslan-MD experience.</p>
+      <h2>About Digital Crew 243</h2>
+      <p>We're revolutionizing the WhatsApp bot experience with cutting-edge technology. Our Ultra Pro Max version delivers unprecedented performance, security, and features. Join thousands of satisfied users who have upgraded to the premium experience.</p>
     </div>
 
-    <!-- Contact Section -->
     <div class="contact">
       <h2>Elite Support</h2>
-      <p>Our premium support team is available 24/7 to assist you with any issues. Contact us via SMS, WhatsApp, or Telegram for instant assistance with deployment, troubleshooting, or custom requests.</p>
+      <p>Our premium support team is available 24/7 to assist you with any issues. Contact us via Telegram, WhatsApp, or Facebook for instant assistance with deployment, troubleshooting, or custom requests.</p>
     </div>
   </div>
 
-  <!-- Footer -->
   <div class="footer">
-    <p>© 2023 Arslan Tech | Ultra Pro Max Edition</p>
-    <p>Contact <b>ArslanMD Official</b> for Premium Support</p>
+    <p>© 2026 Digital Crew 243 | Ultra Pro Max Edition</p>
+    <p>Contact <b>Digital Crew 243 Official</b> for Premium Support</p>
     <div class="social-links">
-      <a href="https://youtube.com/@arslanmdofficial" target="_blank"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.instagram.com/arslanmdofficial" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://t.me/arslanmd" target="_blank"><i class="fab fa-telegram"></i></a>
-      <a href="t.me/arslanmd" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://youtube.com/@digitalcrew243" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/digitalcrew243" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/digitalcrew243" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="https://github.com/NeoZoneHub" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </div>
 
-  <!-- Particle.js -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script>
-    // Advanced particle configuration
     particlesJS('particles-js', {
       particles: {
-        number: { value: 120, density: { enable: true, value_area: 800 } },
-        color: { value: ["#00ffcc", "#ff2e63", "#7209b7", "#4361ee"] },
+        number: { value: 100, density: { enable: true, value_area: 800 } },
+        color: { value: ["#14B8A6", "#3B82F6", "#8B5CF6"] },
         shape: { 
-          type: ["circle", "triangle", "polygon"],
+          type: ["circle", "triangle"],
           polygon: { nb_sides: 6 }
         },
         opacity: { 
-          value: 0.7, 
+          value: 0.5, 
           random: true,
           anim: { enable: true, speed: 1, opacity_min: 0.2, sync: false }
         },
         size: { 
-          value: 3, 
+          value: 2.5, 
           random: true,
           anim: { enable: true, speed: 4, size_min: 0.3, sync: false }
         },
         line_linked: {
           enable: true,
           distance: 150,
-          color: "#00ffcc",
-          opacity: 0.4,
-          width: 1.5
+          color: "#14B8A6",
+          opacity: 0.25,
+          width: 1
         },
         move: {
           enable: true,
-          speed: 2,
+          speed: 1.5,
           direction: "none",
           random: true,
           straight: false,
@@ -752,7 +614,6 @@
       retina_detect: true
     });
 
-    // Add scroll animations
     document.addEventListener('DOMContentLoaded', function() {
       const observerOptions = {
         threshold: 0.1,
@@ -768,29 +629,27 @@
         });
       }, observerOptions);
 
-      // Observe all feature cards and sections
       document.querySelectorAll('.feature-card, .about, .contact, .hero').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(el);
       });
     });
   </script>
 
-  <!-- GetButton.io widget -->
   <script type="text/javascript">
     (function () {
       var options = {
-        sms: "+923237045919",
+        sms: "+998771529519",
         sms_color: "#129BF4",
-        whatsapp: "+923237045919",
-        telegram: "@arslanmd",
+        whatsapp: "+998771529519",
+        telegram: "@digitalcrew243",
         call_to_action: "Premium Support",
-        button_color: "#FF318E",
+        button_color: "#14B8A6",
         position: "left",
         order: "sms,whatsapp,telegram",
-        pre_filled_message: "Hello Arslan Tech! I need assistance with the Ultra Pro Max version.",
+        pre_filled_message: "Hello Digital Crew 243! I need assistance with the Ultra Pro Max version.",
       };
       var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
       var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
