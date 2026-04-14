@@ -8,7 +8,7 @@
   <img src="https://img.shields.io/badge/MADE%20FOR-DEVS%20%26%20BUILDERS-black?style=for-the-badge">
 </p>---
 
-🚀 OVERVIEW
+## 🚀 OVERVIEW
 
 ShadowCrew Session ID est une solution moderne pour générer facilement des sessions WhatsApp via :
 
@@ -17,9 +17,7 @@ ShadowCrew Session ID est une solution moderne pour générer facilement des ses
 
 🎯 Objectif : accélérer la création et le déploiement de bots WhatsApp sans complexité inutile.
 
----
-
-✨ FEATURES
+## ✨ FEATURES
 
 + Génération instantanée de SESSION_ID
 + Connexion via Pair Code (ultra rapide ⚡)
@@ -28,9 +26,7 @@ ShadowCrew Session ID est une solution moderne pour générer facilement des ses
 + Compatible bots WhatsApp modernes
 + Prêt pour automation / IA 🤖
 
----
-
-⚙️ HOW IT WORKS
+## ⚙️ HOW IT WORKS
 
 🔹 Pair Code Mode
 
@@ -45,15 +41,13 @@ ShadowCrew Session ID est une solution moderne pour générer facilement des ses
 2. Scanner avec WhatsApp
 3. Session active instantanément 🔥
 
----
 
 🧩 ENV CONFIG
-
+```bash
 SESSION_ID=your_session_here
+```
 
----
-
-🛠️ DEPLOYMENT READY
+# 🛠️ DEPLOYMENT READY
 
 <p align="center">
   <img src="https://img.shields.io/badge/DEPLOY-HEROKU-purple?style=for-the-badge&logo=heroku">
@@ -63,18 +57,14 @@ SESSION_ID=your_session_here
 ✔ Plug & Play
 ✔ Intégration rapide dans tes bots
 
----
-
-🧠 USE CASES
+# 🧠 USE CASES
 
 - 🤖 Création de bots WhatsApp
 - ⚡ Automatisation des messages
 - 🔐 Gestion de sessions sécurisées
 - 🧪 Tests & développement rapide
 
----
-
-📢 JOIN THE CHANNEL
+## 📢 JOIN THE CHANNEL
 
 <p align="center">
   <a href="https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B">
@@ -82,15 +72,13 @@ SESSION_ID=your_session_here
   </a>
 </p>---
 
-⚠️ DISCLAIMER
+# ⚠️ DISCLAIMER
 
 ! Usage strictement légal et éducatif
 ! Respect des règles WhatsApp obligatoire
 ! L'utilisateur est responsable de son utilisation
 
----
-
-⭐ SUPPORT
+# ⭐ SUPPORT
 
 <p align="center">
   <img src="https://img.shields.io/badge/STAR-REPO-yellow?style=for-the-badge&logo=github">
