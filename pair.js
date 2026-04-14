@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router();
 const pino = require('pino');
 const {
-    default: Mbuvi_Tech,
+    default: Digital_Crew,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -21,11 +21,11 @@ function removeFile(FilePath) {
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-    
-    async function Mbuvi_MD_PAIR_CODE() {
+
+    async function SHADOWCREW_MD_PAIR_CODE() {
         const { state, saveCreds } = await useMultiFileAuthState('./temp/' + id);
         try {
-            let Pair_Code_By_Mbuvi_Tech = Mbuvi_Tech({
+            let Pair_Code_By_Digital_Crew = Digital_Crew({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({ level: 'fatal' }).child({ level: 'fatal' })),
@@ -35,66 +35,70 @@ router.get('/', async (req, res) => {
                 browser: Browsers.macOS('Chrome')
             });
 
-            if (!Pair_Code_By_Mbuvi_Tech.authState.creds.registered) {
+            if (!Pair_Code_By_Digital_Crew.authState.creds.registered) {
                 await delay(1500);
                 num = num.replace(/[^0-9]/g, '');
-                const code = await Pair_Code_By_Mbuvi_Tech.requestPairingCode(num);
+                const code = await Pair_Code_By_Digital_Crew.requestPairingCode(num);
                 if (!res.headersSent) {
                     await res.send({ code });
                 }
             }
 
-            Pair_Code_By_Mbuvi_Tech.ev.on('creds.update', saveCreds);
-            Pair_Code_By_Mbuvi_Tech.ev.on('connection.update', async (s) => {
+            Pair_Code_By_Digital_Crew.ev.on('creds.update', saveCreds);
+            Pair_Code_By_Digital_Crew.ev.on('connection.update', async (s) => {
                 const { connection, lastDisconnect } = s;
                 if (connection === 'open') {
                     await delay(5000);
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                     await delay(800);
                     let b64data = Buffer.from(data).toString('base64');
-                    let session = await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: 'ARSLAN-MD~' + b64data });
+                    let session = await Pair_Code_By_Digital_Crew.sendMessage(Pair_Code_By_Digital_Crew.user.id, { text: 'SHADOWCREW-MD~' + b64data });
 
-                    let Mbuvi_MD_TEXT = `
+                    let SHADOWCREW_MD_TEXT = `
         
-╔════════════════════◇
-║『 SESSION CONNECTED』
-║ ✨ Arslan-MD 🔷
-║ ✨ ArslanMD OFFICIAL🔷
-╚════════════════════╝
+╭━━━━━━━━━━━━━━━━━━━━╮
+┃  🔹 SESSION ACTIVE 🔹  ┃
+┃  ✦ DigitalCrew-MD ✦   ┃
+┃  ✦ OFFICIAL BOT ✦     ┃
+╰━━━━━━━━━━━━━━━━━━━━╯
 
+━━━━━━━━━━━━━━━━━━━
 
----
+╭━━━━━━━━━━━━━━━━━━━━╮
+┃  ⚙️ CONFIGURATION ⚙️  ┃
+┃  ➤ Instance sélectionnée : DigitalCrew-MD
+┃  ➤ Ajoute ton SESSION_ID sur Heroku 🔑
+┃  ➤ Variable : SESSION_ID
+╰━━━━━━━━━━━━━━━━━━━━╯
 
-╔════════════════════◇
-║『 YOU'VE CHOSEN Arslan-MD 』
-║ -Set the session ID in Heroku:
-║ - SESSION_ID: 
-╚════════════════════╝
-╔════════════════════◇
-║ 『••• _V𝗶𝘀𝗶𝘁 𝗙𝗼𝗿_H𝗲𝗹𝗽 •••』
-║❍ 𝐎𝐰𝐧𝐞𝐫: 923237045919
-║❍ 𝐑𝐞𝐩𝐨: https://github.com/Arslan-MD/Arslan_MD
-║❍ 𝐖𝐚𝐆𝗿𝐨𝐮𝐩: https://chat.whatsapp.com/KRyARlvcUjoIv1CPSSyQA5?mode=wwt
-║❍ 𝐖𝐚𝐂𝐡𝐚𝐧𝐧𝐞𝐥: https://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306
-║
-║ ☬ ☬ ☬ ☬
-╚═════════════════════╝
-𒂀 Enjoy Arslan-MD
+━━━━━━━━━━━━━━━━━━━
 
+╭━━━━━━━━━━━━━━━━━━━━╮
+┃  🌐 SUPPORT & LINKS 🌐  ┃
+┃  ▶ YouTube : youtube.com/@Digitalcrew243 🎥
+┃  ▶ Owner : +998 771529519 👤
+┃  ▶ Repo : https://github.com/NeoZoneHub-MD/ShadowCrew_MD 💻
+┃  ▶ WhatsApp Group :
+┃    https://chat.whatsapp.com/LlvGyc3ejMwJoPKguKT2Is?mode=gi_t 💬
+┃  ▶ WhatsApp Channel :
+┃    https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B 📢
+╰━━━━━━━━━━━━━━━━━━━━╯
 
----
+━━━━━━━━━━━━━━━━━━━
 
-Don't Forget To Give Star⭐ To My Repo
+⚡ DigitalCrew — Build. Automate. Dominate. 🤖🔥
+
+⭐ Pense à laisser une étoile sur le repo pour soutenir le projet
 ______________________________`;
 
-                    await Pair_Code_By_Mbuvi_Tech.sendMessage(Pair_Code_By_Mbuvi_Tech.user.id, { text: Toxic_MD_TEXT }, { quoted: session });
+                    await Pair_Code_By_Digital_Crew.sendMessage(Pair_Code_By_Digital_Crew.user.id, { text: SHADOWCREW_MD_TEXT }, { quoted: session });
 
                     await delay(100);
-                    await Pair_Code_By_Mbuvi_Tech.ws.close();
+                    await Pair_Code_By_Digital_Crew.ws.close();
                     return await removeFile('./temp/' + id);
                 } else if (connection === 'close' && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    Mbuvi_MD_PAIR_CODE();
+                    SHADOWCREW_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -105,8 +109,8 @@ ______________________________`;
             }
         }
     }
-    
-    return await Mbuvi_MD_PAIR_CODE();
+
+    return await SHADOWCREW_MD_PAIR_CODE();
 });
 
 module.exports = router;
