@@ -4,7 +4,7 @@
   "description": "A multi functional whatsapp bot Web paircode.",
   "main": "crew.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Arslan-MD",
+    "start": "pm2 start index.js --deep-monitoring --attach --name ShadowCrew-MD",
     "stop": "pm2 stop ShadowCrew-MD",
     "restart": "pm2 restart ShadowCrew-MD"
   },
