@@ -3,7 +3,7 @@
     "name": "ShadowCrew-md",
     "description": "A whatsApp bot based on Baileysjs linrary (Ts+Js) with Multi Device support",
     "repository": "https://github.com/NeoZoneHub/ShadowCrew-session-id",
-    "logo": "https://files.catbox.moe/a6chsf.jpg",
+    "logo": "https://files.catbox.moe/logo.jpg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
     "buildpacks": [
       {
