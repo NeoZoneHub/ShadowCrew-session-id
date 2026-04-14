@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/STATUS-ACTIVE-success?style=for-the-badge&logo=github">
   <img src="https://img.shields.io/badge/POWERED-BY%20DIGITALCREW243-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/MADE%20FOR-DEVS%20%26%20BUILDERS-black?style=for-the-badge">
-</p>---
+</p>
 
 ## 🚀 OVERVIEW
 
@@ -70,7 +70,7 @@ SESSION_ID=your_session_here
   <a href="https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B">
     <img src="https://img.shields.io/badge/WHATSAPP%20CHANNEL-JOIN%20NOW-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
   </a>
-</p>---
+</p>
 
 # ⚠️ DISCLAIMER
 
@@ -82,7 +82,7 @@ SESSION_ID=your_session_here
 
 <p align="center">
   <img src="https://img.shields.io/badge/STAR-REPO-yellow?style=for-the-badge&logo=github">
-</p>---
+</p>
 
 ╭━━━━━━━━━━━━━━━━━━━━━━╮
 ┃ ⚡ BUILD • AUTOMATE • SCALE ┃
