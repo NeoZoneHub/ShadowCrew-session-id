@@ -2,11 +2,11 @@
   "name": "web-pair",
   "version": "0.0.1",
   "description": "A multi functional whatsapp bot Web paircode.",
-  "main": "malvin.js",
+  "main": "crew.js",
   "scripts": {
-    "start": "pm2 start arslan.js --deep-monitoring --attach --name Arslan-MD",
-    "stop": "pm2 stop Arslan-MD",
-    "restart": "pm2 restart Arslan-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Arslan-MD",
+    "stop": "pm2 stop ShadowCrew-MD",
+    "restart": "pm2 restart ShadowCrew-MD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "npm:wileys",              
