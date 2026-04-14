@@ -1,76 +1,103 @@
-⚡ ShadowCrew Session ID
+⚡ SHADOWCREW SESSION ID
 
-🔐 WhatsApp Pair Code & QR Code Generator
+🔐 WhatsApp Pair Code • QR Code • Automation Ready
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE-success?style=for-the-badge&logo=github">
+  <img src="https://img.shields.io/badge/POWERED-BY%20DIGITALCREW243-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/MADE%20FOR-DEVS%20%26%20BUILDERS-black?style=for-the-badge">
+</p>---
+
+🚀 OVERVIEW
+
+ShadowCrew Session ID est une solution moderne pour générer facilement des sessions WhatsApp via :
+
+- 📲 Pair Code (rapide & sans friction)
+- 🔳 QR Code (classique & fiable)
+
+🎯 Objectif : accélérer la création et le déploiement de bots WhatsApp sans complexité inutile.
+
+---
+
+✨ FEATURES
+
++ Génération instantanée de SESSION_ID
++ Connexion via Pair Code (ultra rapide ⚡)
++ Support QR Code stable
++ Interface clean & optimisée UX
++ Compatible bots WhatsApp modernes
++ Prêt pour automation / IA 🤖
+
+---
+
+⚙️ HOW IT WORKS
+
+🔹 Pair Code Mode
+
+1. Entrer ton numéro WhatsApp
+2. Cliquer sur Generate Pair Code
+3. Valider sur ton téléphone
+4. SESSION_ID générée automatiquement ✅
+
+🔹 QR Code Mode
+
+1. Générer le QR Code
+2. Scanner avec WhatsApp
+3. Session active instantanément 🔥
+
+---
+
+🧩 ENV CONFIG
+
+SESSION_ID=your_session_here
+
+---
+
+🛠️ DEPLOYMENT READY
+
+<p align="center">
+  <img src="https://img.shields.io/badge/DEPLOY-HEROKU-purple?style=for-the-badge&logo=heroku">
+  <img src="https://img.shields.io/badge/RUN-VPS-black?style=for-the-badge&logo=linux">
+  <img src="https://img.shields.io/badge/LOCALHOST-DEV-green?style=for-the-badge&logo=visualstudiocode">
+</p>✔ Aucun setup complexe
+✔ Plug & Play
+✔ Intégration rapide dans tes bots
+
+---
+
+🧠 USE CASES
+
+- 🤖 Création de bots WhatsApp
+- ⚡ Automatisation des messages
+- 🔐 Gestion de sessions sécurisées
+- 🧪 Tests & développement rapide
+
+---
+
+📢 JOIN THE CHANNEL
+
+<p align="center">
+  <a href="https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B">
+    <img src="https://img.shields.io/badge/WHATSAPP%20CHANNEL-JOIN%20NOW-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
+  </a>
+</p>---
+
+⚠️ DISCLAIMER
+
+! Usage strictement légal et éducatif
+! Respect des règles WhatsApp obligatoire
+! L'utilisateur est responsable de son utilisation
+
+---
+
+⭐ SUPPORT
+
+<p align="center">
+  <img src="https://img.shields.io/badge/STAR-REPO-yellow?style=for-the-badge&logo=github">
+</p>---
 
 ╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ 🚀 ShadowCrew Session ID ┃
-╰━━━━━━━━━━━━━━━━━━━━━━╯
-
-Un outil simple, rapide et efficace pour générer des Session ID WhatsApp via :
-
-- 📲 Pair Code
-- 🔳 QR Code
-
-Conçu pour aider les développeurs, créateurs de bots et passionnés d’automatisation à déployer facilement leurs bots WhatsApp 💻🤖
-
-# 🌟 Fonctionnalités
-
-✨ Génération instantanée de Session ID
-✨ Support du Pair Code (connexion sans scan complexe)
-✨ Génération QR Code rapide et stable
-✨ Interface simple et intuitive
-✨ Compatible avec déploiement (Heroku / VPS / Local)
-
-# ⚙️ Utilisation
-
-🔹 Méthode 1 : Pair Code
-
-1. Lance le site
-2. Entre ton numéro WhatsApp 📱
-3. Clique sur Generate Pair Code
-4. Connecte ton WhatsApp avec le code fourni
-
-🔹 Méthode 2 : QR Code
-
-1. Ouvre l’interface
-2. Clique sur Generate QR Code
-3. Scan avec WhatsApp
-4. Session connectée automatiquement ✅
-
-# 🧠 Objectif du projet
-
-Ce projet a été créé pour :
-
-- Simplifier la création de bots WhatsApp ⚡
-- Éviter les configurations complexes ❌
-- Accélérer le déploiement des projets IA & automation 🤖
-- Aider la communauté à construire leurs propres outils 💡
-
-# 🚀 Déploiement
-
-Tu peux utiliser ce projet sur :
-
-`- 🟣 Heroku`
-`- 🖥️ VPS`
-`- 💻 Localhost`
-
-Variables nécessaires :
-
-```SESSION_ID=your_session_here```
-
-# ⚠️ Disclaimer
-
-Ce projet est destiné à un usage éducatif et légal uniquement.
-Respecte toujours les règles de WhatsApp et les lois en vigueur.
-
-# ⭐ Support
-
-Si ce projet t’aide :
-➡️ Laisse une ⭐ sur le repo
-➡️ Partage avec la communauté
-
-╭━━━━━━━━━━━━━━━━━━━━━━╮
-┃ ⚡ Build • Automate • Scale ┃
+┃ ⚡ BUILD • AUTOMATE • SCALE ┃
 ╰━━━━━━━━━━━━━━━━━━━━━━╯
 
 𓆩 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐂𝐫𝐞𝐰 𝟐𝟒𝟑 𓆪
