@@ -67,7 +67,7 @@ SESSION_ID=your_session_here
 ## 📢 JOIN THE CHANNEL
 
 <p align="center">
-  <a href="https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B">
+  <a href="https://whatsapp.com/channel/0029VbDk6ONDeONEhyKaDK0n">
     <img src="https://img.shields.io/badge/WHATSAPP%20CHANNEL-JOIN%20NOW-25D366?style=for-the-badge&logo=whatsapp&logoColor=white">
   </a>
 </p>
@@ -88,4 +88,4 @@ SESSION_ID=your_session_here
 ┃ ⚡ BUILD • AUTOMATE • SCALE ┃
 ╰━━━━━━━━━━━━━━━━━━━━━━╯
 
-𓆩 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐂𝐫𝐞𝐰 𝟐𝟒𝟑 𓆪
+SUKUNA
